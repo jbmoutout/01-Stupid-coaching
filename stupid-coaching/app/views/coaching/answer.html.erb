@@ -1,0 +1,11 @@
+<h1>Coaching#answer</h1>
+<p>Yo ask <%= @query %></p>
+<p>Yo answer
+  <%if @query.include? "?" %>
+  <%= "Silly question, get dressed and go to work!"%>
+  <% else %>
+  <%="Fuck Off" %>
+  <%end %>
+  </p>
+
+<%= link_to"Wanna More?", ask_path %>
